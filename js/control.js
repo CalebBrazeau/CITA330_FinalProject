@@ -17,17 +17,21 @@ function login() {
 }
 
 /*
- * This function generates initial search container by selecting all items on the page
- * with the 'page-link' id and adds them into a results box.
+ * This function collects all elements on the page with the id 'page-link'
+ * then checks each one if they include what the user is searching for and displays
+ * them in the results box
  */
 function generateSearchContainer() {
     // Check if the search container already exists and remove it if so
     if($("#search-container")) {
+        // Destroy that bad boi
         $("#search-container").remove();
     }
 
     // Collect all links on the page with id 'page-link'
     var links = $("[id=page-link]");
+    // Get user input and send to lowercase
+    var input = document.getElementById("search").value.toLowerCase();
 
     // create container div
     var container = document.createElement("div");
@@ -36,46 +40,27 @@ function generateSearchContainer() {
 
     // Loop through each link found on the page
     for(var i = 0; i < links.length; i++) {
-        // Create result container div with unique ID
-        var result = document.createElement("div");
-        result.id = "result-" + i;
-
-        // Create link
-        var resultLink = document.createElement("a");
-        resultLink.innerHTML = links[i].innerHTML;
-        resultLink.href = links[i].href;
-        resultLink.classList = "text-decoration-underline";
-
-        // Append the created link to the result container
-        result.appendChild(resultLink);
-        // Append the result container to the main search container
-        container.appendChild(result);
+        // If the current element's innerHTML includes the users input
+        if (links[i].innerHTML.toLowerCase().includes(input)) {
+            // Create result container div with unique ID
+            var resultContainer = document.createElement("div");
+            resultContainer.id = "result";
+    
+            // Create link
+            var resultLink = document.createElement("a");
+            resultLink.innerHTML = links[i].innerHTML;
+            resultLink.href = links[i].href;
+            resultLink.classList = "text-decoration-underline";
+    
+            // Append the created link to the result container
+            resultContainer.appendChild(resultLink);
+            // Append the result container to the main search container
+            container.appendChild(resultContainer);
+        }
     }
 
     // Append main search container to the 'second' nav bar
     $("#nav-bar-2").append(container);
-    // Call to search which will be redone at some point
-    search(links.length);
-}
-
-// Redo at some point
-function search(length) {
-    // Check if the search box contains something
-    if(document.getElementById("search").value) {
-        // // Set input var to contents of the search box
-        var input = document.getElementById("search").value.toLowerCase();
-
-        // TODO redo this, this is pretty shitty atm
-        // Should generate new results instead of deleting them
-        for (var i = 0; i < length; i++) {
-            var link = document.getElementById("result-" + i);
-            if(!link.childNodes[0].innerHTML.toLowerCase().includes(input))
-                link.remove();
-        }
-    } else {
-        // Destroy that bad boi
-        $("#search-container").remove();
-    }
 }
 
 /*
