@@ -83,3 +83,7 @@ function go() {
         window.location.href = $("#search-container")[0].childNodes[0].childNodes[0].href;
     }
 }
+
+function setTheme() {
+    document.cookie = "test=test; path=/";
+}
