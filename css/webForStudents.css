@@ -13,9 +13,9 @@ button > a {
     color: var(--bs-light) !important;
 }
 /* So unput fields do not end up looking like noodles */
-input {
+/* input {
     max-width: 150px !important;
-}
+} */
 
 
 /* So checklist does not stretch farther than what looks decent */
@@ -38,8 +38,18 @@ input {
     padding: 1rem;
     box-shadow: var(--box-shadow);
 }
-.form-outline{
-    border: 1px solid var(--bs-info);
-    border-radius: 7px;
-    max-width: 325px !important;
+/* Outline for input fields */
+.form-outline {
+    border: 1px solid #bdbdbd;
+    border-radius: .25rem;
+    max-width: 15rem;
+}
+/* 'placeholder' text for input fields */
+.form-label {
+    background-color: #303030 !important;
+    padding-left: .35rem;
+    padding-right: .35rem;
+}
+.dropdown {
+    margin-left: 1rem;
 }

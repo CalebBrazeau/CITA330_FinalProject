@@ -1,0 +1,31 @@
+:root {
+    --bg-color: #373C42;
+    /* accent/secondary color */
+    --bg-color-2: #748287;
+    /* body font color */
+    --font-color: #000000;
+    --form-bg-color: var(--bg-color-2);
+    /* Color for links Light Themes: #1a0dab, Dark Themes: #72a4f7 */
+    --link-color: #1a0dab;
+    /* Outline color for input fields */
+    --form-outline: #000000;
+}
+body {
+    color: var(--font-color);
+    background-color: var(--bg-color-2);
+}
+nav {
+    background-color: var(--bg-color);
+}
+.form-label {
+    background-color: var(--form-bg-color) !important;
+}
+.box-shadow {
+    background-color: var(--bg-color);
+}
+.form-outline {
+    border: 1px solid var(--form-outline);
+}
+.text-decoration-underline {
+    color: var(--link-color) !important;
+}

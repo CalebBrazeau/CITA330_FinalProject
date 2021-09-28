@@ -38,7 +38,6 @@ function generateSearchContainer() {
     } else {
         // Collect all links on the page with id 'page-link'
         var links = $("[id=page-link]");
-        // Get user input and send to lowercase
     
         // create container div
         var container = document.createElement("div");
@@ -84,6 +83,31 @@ function go() {
     }
 }
 
-function setTheme() {
-    document.cookie = "test=test; path=/";
+// IMPORTANT: Themes only work on a server, Apache webservers are the easiest to set up if you want to work on theme
+
+/*
+ * Function to set the theme cookie for each page
+ */
+function setTheme(cValue) {
+    // Set browser cookie to what theme the user selects
+    document.cookie = "theme=" + cValue + "; expires=Thu, 20 Apr 9999 12:00:00 UTC; path=/";
+    // Refresh the page to reflect changes
+    window.location.reload(false);
+}
+
+/*
+ * Function to read and return the theme cookie value
+ * @return c.substring(name.length, c.length) (cookie value)
+ */
+function getTheme() {
+    var name = "theme=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+    }
+    return c.substring(name.length, c.length);
 }

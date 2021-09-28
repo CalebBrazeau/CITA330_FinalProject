@@ -17,6 +17,31 @@
     <script src="../js/control.js"></script>
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      window.onload = function() {
+          try {
+              switch(getTheme()) {
+                  case "light":
+                      $('head').append('<link href="../css/md5/mdb.min.css" rel="stylesheet">');
+                      break;
+                  case "citrus":
+                      $('head').append('<link href="../css/themes/citrus.css" rel="stylesheet">');
+                      break;
+                  case "chrimsonChin":
+                      $('head').append('<link href="../css/themes/chrimsonChin.css" rel="stylesheet">');
+                      break;
+                  case "slate":
+                      $('head').append('<link href="../css/themes/slate.css" rel="stylesheet">');
+                      break;
+                  default:
+                      // Do nothing (dark theme is default)
+                      break;
+              }
+          } catch (e) {
+              console.log("uh oh");
+          }
+      }
+    </script>
 </head>
 <body>
   <img src="../images/header.jpg" alt="Header">
@@ -31,6 +56,9 @@
                   </button>
                   <button type="button" class="btn btn-primary">
                       <a href="../pages/studentInformation.html" class="primary-button">Student Information & Financial Aid</a>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <a href="../pages/settings.html" class="primary-button">Settings</a>
                   </button>
                 </div>
               </li>
