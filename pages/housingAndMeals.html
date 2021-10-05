@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="../css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="../js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="../css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="../js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="../js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <img src="../images/header.jpg" alt="Header">
+  <div class="body-container">
+      <nav class="navbar navbar-expand-lg bg-link navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary">
+                      <a href="../pages/personalInformation.html" class="primary-button">Personal Information</a>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                      <a href="../pages/studentInformation.html" class="primary-button">Student Information & Financial Aid</a>
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <a href="../pages/settings.html" class="primary-button">Settings</a>
+                  </button>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col" id="nav-bar-2">
+          <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
+            <p>Search: </p>
+          </div>
+          <div class="d-flex d-sm-inline-flex">
+            <div class="form-outline container-fluid">
+                <input type="text" id="search" onkeyup="generateSearchContainer();" class="form-control form-control-sm"/>
+                <label class="form-label" for="search">Search:</label>
+              </div>
+            </div>
+            <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
+              <button class="btn btn-primary" onclick="go();">
+                <a onclick="go();">Go</a>
+              </button>
+            </div>
+            
+      </div>
+        <div class="col-auto ms-auto">
+          <div class="d-flex">
+              <a href="../pages/mainMenu.html" style="margin-right: 1rem;" class="text-decoration-underline small">RETURN TO MENU</a>
+              <a href="../pages/siteMap.html" style="margin-right: 1rem;" class="text-decoration-underline small">SITE MAP</a>
+              <a href="../pages/help.html" style="margin-right: 1rem;" class="text-decoration-underline small">HELP</a>
+              <a href="../pages/login.html" style="margin-right: 1rem;" class="text-decoration-underline small">EXIT</a>
+          </div>
+        </div>
+    </div>
+    <hr>
+
+          <h2 class="mb-1">Housing and Meals</h2>
+          <div class="box-shadow">
+            <hr>
+              <div class="body-container">
+                <div>
+                  <a class="text-decoration-underline" id="page-link" href="https://reslife.morrisville.edu/webpatron/Login.asp?TargetPage=Default.asp" target="_blank">Hosuing Preferences Form</a>
+                  <p class="small text-muted">Housing Preferences Form (After making your housing down payment, please wait 24 business hours before completing this form)</p>
+                </div>
+                <div>
+                  <a class="text-decoration-underline" id="page-link" href="changeMealPlan.html">Meal Plan Selection and Change Form</a>
+                  <p class="small text-muted">All new and returning students may use this form to select a meal plan. (Residence Hall, Commons or Commuter)</p>
+                </div>
+                <div>
+                  <a class="text-decoration-underline" id="page-link" href="housingInformation.html">View Your Housing, Roommate, and Meal Plan Information</a>
+                  <p class="small text-muted">Students may use this link to view their room assignment, roommates and meal plan information when it is available.</p>
+                </div>
+              </div>
+            <hr>
+          </div>
+
+          <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+          <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+        </div>
+    </body>
+</html>
