@@ -111,3 +111,44 @@ function getTheme() {
     }
     return c.substring(name.length, c.length);
 }
+
+// Function to run on page load, sets theme and active nav bar button
+function onLoad() {
+    try {
+        // If there is an element on the page with the 'title' id
+        if($('#title').length == 1) {
+            // Get the elements innerHTML
+            var activeNav = $('#title')[0].innerHTML;
+
+            // Set navbar button to active based off of the innerHTML
+            if(activeNav == 'Student Information &amp; Financial Aid') {
+              $('#student').addClass("active");
+            } else if (activeNav == 'Personal Information') {
+              $('#personal').addClass("active");
+            } else if (activeNav == 'Settings') {
+              $('#settings').addClass("active");
+            }
+        }
+        // Gets the current theme from cookies and appends the proper css file to the head
+        switch(getTheme()) {
+            case "light":
+                $('head').append('<link href="../css/md5/mdb.min.css" rel="stylesheet">');
+                break;
+            case "citrus":
+                $('head').append('<link href="../css/themes/citrus.css" rel="stylesheet">');
+                break;
+            case "chrimsonChin":
+                $('head').append('<link href="../css/themes/chrimsonChin.css" rel="stylesheet">');
+                break;
+            case "slate":
+                $('head').append('<link href="../css/themes/slate.css" rel="stylesheet">');
+                break;
+            default:
+                // Do nothing (dark theme is default)
+                break;
+        }
+      } catch (e) {
+          // uh oh
+          console.log("uh oh");
+      }
+}
