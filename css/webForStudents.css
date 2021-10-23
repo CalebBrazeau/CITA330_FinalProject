@@ -31,3 +31,7 @@ button > a {
     padding: 1rem;
     box-shadow: var(--box-shadow);
 }
+
+.tableHeader {
+    background-color: #282828;
+}
