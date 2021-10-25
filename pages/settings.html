@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="../css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="../js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="../css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="../js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="../js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); 
+        });
+    </script>
+</head>
+    <body onload="onLoad();">
+        <div id="header"></div>
+        <hr>
+        <h2 id="title" class="mb-1">Settings</h2>
+        <div class="box-shadow">
+        <hr>
+        <!-- Main Content goes between <hr> tags -->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown" aria-expanded="false">
+              Theme
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" onclick="setTheme('dark');">Dark</a></li>
+              <li><a class="dropdown-item" onclick="setTheme('light');">Light</a></li>
+              <li><a class="dropdown-item" onclick="setTheme('citrus');">Citrus</a></li>
+              <li><a class="dropdown-item" onclick="setTheme('chrimsonChin');">Chrimson Chin</a></li>
+              <li><a class="dropdown-item" onclick="setTheme('slate');">Slate</a></li>
+            </ul>
+          </div>
+        <hr>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>

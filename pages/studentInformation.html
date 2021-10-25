@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Web for Students</title>
+    <title>Web for Students V2</title>
     <meta charset="utf-8">
 
     <link href="../css/webForStudents.css" rel="stylesheet">
@@ -9,124 +9,89 @@
     <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
     <script scr="../js/bootstrap/bootstrap.js"></script>
     <!-- MD5 -->
-    <link href="../css/md5/mdb.dark.min.css" rel="stylesheet">
+    <link href="../css/md5/mdb.dark.min.css" rel="stylesheet" id="md5">
     <script src="../js/md5/mdb.min.js"></script>
-   <!-- Goo-Goo -->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="../js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+        $("#header").load("header.html"); 
+      });
+      </script>
 </head>
-<body>
-  <img src="../images/header.jpg" alt="Header">
-  <div class="body-container">
-      <nav class="navbar navbar-expand-lg bg-link navbar-dark">
-        <div class="container-fluid">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <div class="btn-group" role="group" aria-label="Basic example">
-                  <button type="button" class="btn btn-primary">
-                      <a href="../pages/personalInformation.html" class="primary-button">Personal Information</a>
-                  </button>
-                  <button type="button" class="btn btn-primary active">
-                      <a href="../pages/studentInformation.html" class="primary-button">Student Information & Financial Aid</a>
-                  </button>
-                </div>
-              </li>
-            </ul>
-        </div>
-      </nav>
-      <div class="row">
-        <div class="col">
-            <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
-              <p>Search: </p>
-            </div>
-            <div class="d-flex d-sm-inline-flex">
-              <div class="form-outline container-fluid">
-                  <input type="text" id="formControlSm" class="form-control form-control-sm" />
-                  <label class="form-label" for="formControlSm">Search:</label>
-              </div>
-            </div>
-            <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
-              <button class="btn btn-primary">
-                  <a href="">Go</a>
-              </button>
-            </div>
-        </div>
-        <div class="col-auto ms-auto">
-          <div class="d-flex">
-              <a href="../pages/mainMenu.html" style="margin-right: 1rem;" class="text-decoration-underline small">RETURN TO MENU</a>
-              <a href="../pages/siteMap.html" style="margin-right: 1rem;" class="text-decoration-underline small">SITE MAP</a>
-              <a href="../pages/help.html" style="margin-right: 1rem;" class="text-decoration-underline small">HELP</a>
-              <a href="../pages/login.html" style="margin-right: 1rem;" class="text-decoration-underline small">EXIT</a>
-          </div>
-        </div>
-    </div>
+  <body onload="onLoad();">
+      <div id="header"></div>
     <hr>
-
-          <h2 class="mb-1">Student Information & Financial Aid</h2>
+          <h2 class="mb-1" id="title">Student Information & Financial Aid</h2>
           <div class="box-shadow">
             <hr>
               <div class="body-container">
                 <div>
-                  <a class="text-decoration-underline">Student Checklist</a>
+                  <a class="text-decoration-underline lonk" id="page-link" href="../pages/studentChecklist.html">Student Checklist</a>
                   <p class="small text-muted">Use this link to find the checklist of information you need to complete before the start of the semester.</p>
                 </div>
                 <div>
-                  <a class="text-decoration-underline">Scheduling</a>
+                  <a class="text-decoration-underline lonk" id="page-link" href="test">Scheduling</a>
                   <p class="small text-muted">Check your scheduling status, class schedule, add or drop classes and purchase textbooks.</p>
                 </div>
                 <div>
-                  <a class="text-decoration-underline">Academic Records</a>
+                  <a class="text-decoration-underline lonk" id="page-link" href="test">Academic Records</a>
                   <p class="small text-muted">View your holds, grades, transcripts and other student information.</p>
                 </div>
                 <div>
-                    <a class="text-decoration-underline">Financial Aid</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Financial Aid</a>
                     <p class="small text-muted">Apply for Financial Aid, review status and loans.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Student Account</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Student Account</a>
                     <p class="small text-muted">View your account summaries, statement/payment history and tax information.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Housing and Meals</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="housingAndMeals.html">Housing and Meals</a>
                     <p class="small text-muted">Fill out your Housing Preferences, accept your Housing License, select a Meal Plan, participate in Returning Student Room Selection, or view your Housing, Roommate and Meal Plan information.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Laptop Option Selection</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Laptop Option Selection</a>
                     <p class="small text-muted">Select your laptop and payment plan.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Major Concentrations</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Major Concentrations</a>
                     <p class="small text-muted"><b>Major Concentrations</b></p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">New Student Event Registration</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">New Student Event Registration</a>
                     <p class="small text-muted">New students should use this link to register for the Registration Days events.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Book Voucher Enrollment</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Book Voucher Enrollment</a>
                     <p class="small text-muted">Use this link to enroll in the Book Voucher program and be able to charge textbooks and supplies to your student account.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Pay Your Housing Down Payment</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Pay Your Housing Down Payment</a>
                     <p class="small text-muted">Incoming and returning students should use this link to pay their housing down payment.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Purchase Your Parking Decal</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Purchase Your Parking Decal</a>
                     <p class="small text-muted">Commuter and resident students should use this link to purchase their parking decal.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Immunization Records</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Immunization Records</a>
                     <p class="small text-muted">View your student immunization records.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Participation in Commencement</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Participation in Commencement</a>
                     <p class="small text-muted">View information related to Commencement.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Enrollement Verification (National Student Clearinghouse)</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Enrollement Verification (National Student Clearinghouse)</a>
                     <p class="small text-muted">Obtain an official enrollment certificate that may be printed and mailed to a health insurer, or other agency that requires proof of enrollment. This is an official SUNY Morrisville document.</p>
                   </div>
                   <div>
-                    <a class="text-decoration-underline">Degree Works</a>
+                    <a class="text-decoration-underline lonk" id="page-link" href="test">Degree Works</a>
                     <p class="small text-muted">Morrisville State College Degree Audit System.</p>
                   </div>
               </div>
