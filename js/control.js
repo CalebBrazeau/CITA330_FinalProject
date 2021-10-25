@@ -25,7 +25,7 @@ function generateSearchContainer() {
     // Check if the search container already exists and remove it if so
     if($("#search-container")) {
         // Destroy that bad boi
-        $("[id=search-container]").remove();
+        $("#search-container").remove();
     }
 
     // Get user input
@@ -34,10 +34,10 @@ function generateSearchContainer() {
     // Check if the input box has any contents
     if (!input) {
         // Destroy dat bad boi
-        $("[id=search-container]").remove();
+        $("#search-container").remove();
     } else {
         // Collect all links on the page with id 'page-link'
-        var links = $("[id=page-link]");
+        var links = $("#page-link");
     
         // create container div
         var container = document.createElement("div");
