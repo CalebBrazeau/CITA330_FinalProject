@@ -9,6 +9,8 @@
     --link-color: #1a0dab;
     /* Outline color for input fields */
     --form-outline: #000000;
+    /* Main body link color */
+    --main-lonk-color: #a099ee;
 }
 body {
     color: var(--font-color);
@@ -18,7 +20,8 @@ nav {
     background-color: var(--bg-color);
 }
 .form-label {
-    background-color: var(--form-bg-color) !important;
+    /* background-color: var(--form-bg-color) !important; */
+    background-color: transparent !important;
 }
 .box-shadow {
     background-color: var(--bg-color);
@@ -28,4 +31,7 @@ nav {
 }
 .text-decoration-underline {
     color: var(--link-color) !important;
+}
+.lonk {
+    color: var(--main-lonk-color) !important;
 }
