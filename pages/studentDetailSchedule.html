@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students</title>
+    <meta charset="utf-8">
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+   <!-- Goo-Goo -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <img src="/images/header.jpg" alt="Header">
+    <div class="body-container">
+        <nav class="navbar navbar-expand-lg bg-link navbar-dark">
+          <div class="container-fluid">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">
+                        <a href="/pages/personalInformation.html" class="primary-button">Personal Information</a>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <a href="/pages/studentInformation.html" class="primary-button">Student Information & Financial Aid</a>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col">
+              <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
+                <p>Search: </p>
+              </div>
+              <div class="d-flex d-sm-inline-flex">
+                <div class="form-outline container-fluid">
+                    <input type="text" id="formControlSm" class="form-control form-control-sm" />
+                    <label class="form-label" for="formControlSm">Search:</label>
+                </div>
+              </div>
+              <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
+                <button class="btn btn-primary">
+                    <a href="">Go</a>
+                </button>
+              </div>
+          </div>
+          <div class="col-auto ms-auto">
+            <div class="d-flex">
+                <a href="/pages/mainMenu.html" style="margin-right: 1rem;" class="text-decoration-underline small">RETURN TO MENU</a>
+                <a href="/pages/siteMap.html" style="margin-right: 1rem;" class="text-decoration-underline small">SITE MAP</a>
+                <a href="/pages/help.html" style="margin-right: 1rem;" class="text-decoration-underline small">HELP</a>
+                <a href="/pages/login.html" style="margin-right: 1rem;" class="text-decoration-underline small">EXIT</a>
+            </div>
+          </div>
+      </div>
+      <div style="float:right;">
+        <label class="form-label">Current Date and Time: 
+          <span id='date-time'>
+            <script>
+              var dt = new Date();
+              document.getElementById('date-time').innerHTML=dt;
+            </script>
+          </span>
+        </label>
+      </div>
+    <br>
+    <h1>Student Detail Schedule</h1>
+    <div class="box-shadow">
+    <hr>
+    <!-- Main Content goes between <hr> tags -->
+    Total Credit Hours: 15.000
+    <br />
+    <br />
+    <table class="courseTable"><caption>Web Publishing - CITA 330 - 01</caption>
+      <tr>
+        <th colspan="2" class="tableHeader">Associated Term:</th>
+          <td class="default">Fall 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">CRN:</th>
+          <td class="default">13076</td>
+      </tr>
+      <tr>
+        <th colspan="2">Status:</th>
+          <td class="default">**Web Scheduled** on Aug 20, 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">Assigned Instructor:</th>
+          <td class="default">Mustafa Elfituri
+            <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+              <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+            </a>
+          </td>
+      </tr>
+      <tr>
+        <th colspan="2">Grade Mode:</th>
+          <td class="default">Normal Grading Mode</td>
+      </tr>
+      <tr>
+        <th colspan="2">Credits:</th>
+          <td class="default">3.000</td>
+      </tr>
+      <tr>
+        <th colspan="2">Level:</th>
+          <td class="default">Undergraduate</td>
+      </tr>
+      <tr>
+        <th colspan="2">Campus:</th>
+          <td class="default">Morrisville Campus</td>
+      </tr>
+      <tr>
+        <th colspan="2">Instructional Method:</th>
+        <td class="default">Not Online: No direct instruction delivered online.</td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Scheduled Meeting Times</caption>
+      <tr>
+        <th class="tableHeader">Type</th>
+        <th class="tableHeader">Time</th>
+        <th class="tableHeader">Days</th>
+        <th class="tableHeader">Where</th>
+        <th class="tableHeader">Date Range</th>
+        <th class="tableHeader">Schedule Type</th>
+        <th class="tableHeader">Instructors</th>
+      </tr>
+      <tr>
+        <td class="cellInfo">Class</td>
+        <td class="cellInfo">11:00am-12:50pm</td>
+        <td class="cellInfo">T</td>
+        <td class="cellInfo">Charlton Hall 144&nbsp</td>
+        <td class="cellInfo">Aug 23,2021-Dec 03,2021</td>
+        <td class="cellInfo">Lecture</td>
+        <td class="cellInfo">Mustafa Elfituri
+          <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+            <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Web Publishing - CITA 330 - 02L</caption>
+      <tr>
+        <th colspan="2" class="tableHeader">Associated Term:</th>
+          <td class="default">Fall 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">CRN:</th>
+          <td class="default">13077</td>
+      </tr>
+      <tr>
+        <th colspan="2">Status:</th>
+          <td class="default">**Web Scheduled** on Aug 20, 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">Assigned Instructor:</th>
+          <td class="default">Mustafa Elfituri
+            <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+              <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+            </a>
+          </td>
+      </tr>
+      <tr>
+        <th colspan="2">Grade Mode:</th>
+          <td class="default">Normal Grading Mode</td>
+      </tr>
+      <tr>
+        <th colspan="2">Credits:</th>
+          <td class="default">0.000</td>
+      </tr>
+      <tr>
+        <th colspan="2">Level:</th>
+          <td class="default">Undergraduate</td>
+      </tr>
+      <tr>
+        <th colspan="2">Campus:</th>
+          <td class="default">Morrisville Campus</td>
+      </tr>
+      <tr>
+        <th colspan="2">Instructional Method:</th>
+          <td class="default">Not Online: No direct instruction delivered online.</td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Scheduled Meeting Times</caption>
+      <tr>
+        <th class="tableHead">Type</th>
+        <th class="tableHead">Time</th>
+        <th class="tableHead">Days</th>
+        <th class="tableHead">Where</th>
+        <th class="tableHead">Date Range</th>
+        <th class="tableHead">Schedule Type</th>
+        <th class="tableHead">Instructors</th>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Class</td>
+        <td style="text-align:center;">11:00am-12:50pm</td>
+        <td style="text-align:center;">R</td>
+        <td style="text-align:center;">Charlton Hall 144&nbsp;</td>
+        <td style="text-align:center;">Aug 23,2021-Dec 03,2021</td>
+        <td style="text-align:center;">Lab</td>
+        <td style="text-align:center;">Mustafa Elfituri
+          <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+            <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">User Interface Design - CITA 385 - 01</caption>
+      <tr>
+        <th colspan="2" class="tableHeader">Associated Term:</th>
+          <td class="default">Fall 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">CRN:</th>
+          <td class="default">14363</td>
+      </tr>
+      <tr>
+        <th colspan="2">Status:</th>
+          <td class="default">**Web Scheduled** on Aug 20, 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">Assigned Instructor:</th>
+          <td class="default">Mustafa Elfituri
+            <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+              <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+            </a>
+          </td>
+      </tr>
+      <tr>
+        <th colspan="2">Grade Mode:</th>
+          <td class="default">Normal Grading Mode</td>
+      </tr>
+      <tr>
+        <th colspan="2">Credits:</th>
+          <td class="default">3.000</td>
+      </tr>
+      <tr>
+        <th colspan="2">Level:</th>
+          <td class="default">Undergraduate</td>
+      </tr>
+      <tr>
+        <th colspan="2">Campus:</th>
+          <td class="default">Morrisville Campus</td>
+      </tr>
+      <tr>
+        <th colspan="2">Instructional Method:</th>
+          <td class="default">Not Online: No direct instruction delivered online.</td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Scheduled Meeting Times</caption>
+      <tr>
+        <th class="tableHeader">Type</th>
+        <th class="tableHeader">Time</th>
+        <th class="tableHeader">Days</th>
+        <th class="tableHeader">Where</th>
+        <th class="tableHeader">Date Range</th>
+        <th class="tableHeader">Schedule Type</th>
+        <th class="tableHeader">Instructors</th>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Class</td>
+        <td style="text-align:center;">2:00pm-3:50pm</td>
+        <td style="text-align:center;">TR</td>
+        <td style="text-align:center;">Charlton Hall 145&nbsp;</td>
+        <td style="text-align:center;">Aug 23,2021-Dec 03,2021</td>
+        <td style="text-align:center;">Lecture</td>
+        <td style="text-align:center;">Mustafa Elfituri
+          <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+            <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28 />
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Project Management - CITA 405 - 01</caption>
+      <tr>
+        <th colspan="2" class="tableHeader">Associated Term:</th>
+          <td class="default">Fall 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">CRN:</th>
+          <td class="default">13324</td>
+      </tr>
+      <tr>
+        <th colspan="2">Status:</th>
+          <td class="default">**Web Scheduled** on Aug 20, 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">Assigned Instructor:</th>
+          <td class="default">Stephen R. Klingaman
+            <a href="mailto:klingasr@morrisville.edu" target="Stephen R. Klingaman">
+              <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28 />
+            </a>
+          </td>
+      </tr>
+      <tr>
+        <th colspan="2">Grade Mode:</th>
+          <td class="default">Normal Grading Mode</td>
+      </tr>
+      <tr>
+        <th colspan="2">Credits:</th>
+          <td class="default">3.000</td>
+      </tr>
+      <tr>
+        <th colspan="2">Level:</th>
+          <td class="default">Undergraduate</td>
+      </tr>
+      <tr>
+        <th colspan="2">Campus:</th>
+          <td class="default">Morrisville Campus</td>
+      </tr>
+      <tr>
+        <th colspan="2">Instructional Method:</th>
+          <td class="default">Not Online: No direct instruction delivered online.</td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Scheduled Meeting Times</caption>
+      <tr>
+        <th class="tableHeader">Type</th>
+        <th class="tableHeader">Time</th>
+        <th class="tableHeader">Days</th>
+        <th class="tableHeader">Where</th>
+        <th class="tableHeader">Date Range</th>
+        <th class="tableHeader">Schedule Type</th>
+        <th class="tableHeader">Instructors</th>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Class</td>
+        <td style="text-align:center;">12:00pm-1:50pm</td>
+        <td style="text-align:center;">MW</td>
+        <td style="text-align:center;">Charlton Hall 145&nbsp;</td>
+        <td style="text-align:center;">Aug 23,2021-Dec 03,2021</td>
+        <td style="text-align:center;">Lecture</td>
+        <td style="text-align:center;">Stephen R. Klingaman
+          <a href="mailto:klingasr@morrisville.edu" target="Stephen R. Klingaman">
+            <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Applied Database Manager - CITA 450 - 01</caption>
+      <tr>
+        <th colspan="2" class="tableHeader">Associated Term:</th>
+          <td class="default">Fall 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">CRN: </th>
+          <td class="default">13482</td>
+      </tr>
+      <tr>
+        <th colspan="2">Status:</th>
+          <td class="default">**Web Scheduled** on Aug 20, 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">Assigned Instructor:</th>
+          <td class="default">Mustafa Elfituri
+            <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+              <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+            </a>
+          </td>
+      </tr>
+      <tr>
+        <th colspan="2">Grade Mode:</th>
+          <td class="default">Normal Grading Mode</td>
+      </tr>
+      <tr>
+        <th colspan="2">Credits:</th>
+          <td class="default">3.000</td>
+      </tr>
+      <tr>
+        <th colspan="2">Level:</th>
+          <td class="default">Undergraduate</td>
+      </tr>
+      <tr>
+        <th colspan="2">Campus:</th>
+          <td class="default">Morrisville Campus</td>
+      </tr>
+      <tr>
+        <th colspan="2">Instructional Method:</th>
+          <td class="default">Not Online: No direct instruction delivered online.</td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Scheduled Meeting Times</caption>
+      <tr>
+        <th class="tableHeader">Type</th>
+        <th class="tableHeader">Time</th>
+        <th class="tableHeader">Days</th>
+        <th class="tableHeader">Where</th>
+        <th class="tableHeader">Date Range</th>
+        <th class="tableHeader">Schedule Type</th>
+        <th class="tableHeader">Instructors</th>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Class</td>
+        <td style="text-align:center;">2:00pm-3:50pm</td>
+        <td style="text-align:center;">MW</td>
+        <td style="text-align:center;">Charlton Hall 144&nbsp;</td>
+        <td style="text-align:center;">Aug 23,2021-Dec 03,2021</td>
+        <td style="text-align:center;">Lecture</td>
+        <td style="text-align:center;">Mustafa Elfituri
+          <a href="mailto:elfituma@morrisville.edu" target="Mustafa Elfituri">
+            <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Organizational & End User IS - CITA 460 - 01</caption>
+      <tr>
+        <th colspan="2" class="tableHeader">Associated Term:</th>
+          <td class="default">Fall 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">CRN:</th>
+          <td class="default">13492</td>
+      </tr>
+      <tr>
+        <th colspan="2">Status:</th>
+          <td class="default">**Web Scheduled** on Aug 20, 2021</td>
+      </tr>
+      <tr>
+        <th colspan="2">Assigned Instructor:</th>
+          <td class="default">Stephen R. Klingaman
+            <a href="mailto:klingasr@morrisville.edu" target="Stephen R. Klingaman">
+              <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+            </a>
+          </td>
+      </tr>
+      <tr>
+        <th colspan="2">Grade Mode:</th>
+          <td class="default">Normal Grading Mode</td>
+      </tr>
+      <tr>
+        <th colspan="2">Credits:</th>
+          <td class="default">3.000</td>
+      </tr>
+      <tr>
+        <th colspan="2">Level:</th>
+          <td class="default">Undergraduate</td>
+      </tr>
+      <tr>
+        <th colspan="2">Campus:</th>
+          <td class="default">Morrisville Campus</td>
+      </tr>
+      <tr>
+        <th colspan="2">Instructional Method:</th>
+          <td class="default">Not Online: No direct instruction delivered online.</td>
+      </tr>
+    </table>
+    <table class="courseTable"><caption class="captiontext">Scheduled Meeting Times</caption>
+      <tr>
+        <th class="tableHeader">Type</th>
+        <th class="tableHeader">Time</th>
+        <th class="tableHeader">Days</th>
+        <th class="tableHeader">Where</th>
+        <th class="tableHeader">Date Range</th>
+        <th class="tableHeader">Schedule Type</th>
+        <th class="tableHeader">Instructors</th>
+      </tr>
+      <tr>
+        <td style="text-align:center;">Class</td>
+        <td style="text-align:center;">8:00am-9:15am</td>
+        <td style="text-align:center;">MW</td>
+        <td style="text-align:center;">Charlton Hall 145&nbsp;</td>
+        <td style="text-align:center;">Aug 23,2021-Dec 03,2021</td>
+        <td style="text-align:center;">Lecture</td>
+        <td style="text-align:center;">Stephen R. Klingaman
+          <a href="mailto:klingasr@morrisville.edu" target="Stephen R. Klingaman">
+            <img src="/wtlgifs/web_email.gif" alt="E-mail" class="headerImg" title="E-mail" name="web_email" hspace=4 vspace=0 border=0 height=28 width=28/>
+          </a>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <a href="">Return to Previous</a>
+    <hr>
+    </div>
+  <p class="fw-bold fs-6">RELEASE: 1</p>
+  <p class="fw-bold fs-6">&copy; Jim Cook</p>
+</body>

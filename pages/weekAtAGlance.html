@@ -1,0 +1,351 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+   <!-- Goo-Goo -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <img src="/images/header.jpg" alt="Header">
+    <div class="body-container">
+        <nav class="navbar navbar-expand-lg bg-link navbar-dark">
+          <div class="container-fluid">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary">
+                        <a href="/pages/personalInformation.html" class="primary-button">Personal Information</a>
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        <a href="/pages/studentInformation.html" class="primary-button">Student Information & Financial Aid</a>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col">
+              <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
+                <p>Search: </p>
+              </div>
+              <div class="d-flex d-sm-inline-flex">
+                <div class="form-outline container-fluid">
+                    <input type="text" id="formControlSm" class="form-control form-control-sm" />
+                    <label class="form-label" for="formControlSm">Search:</label>
+                </div>
+              </div>
+              <div class="d-flex d-sm-inline-flex" style="margin-right:1%;">
+                <button class="btn btn-primary">
+                    <a href="">Go</a>
+                </button>
+              </div>
+          </div>
+          <div class="col-auto ms-auto">
+            <div class="d-flex">
+                <a href="/pages/mainMenu.html" style="margin-right: 1rem;" class="text-decoration-underline small">RETURN TO MENU</a>
+                <a href="/pages/siteMap.html" style="margin-right: 1rem;" class="text-decoration-underline small">SITE MAP</a>
+                <a href="/pages/help.html" style="margin-right: 1rem;" class="text-decoration-underline small">HELP</a>
+                <a href="/pages/login.html" style="margin-right: 1rem;" class="text-decoration-underline small">EXIT</a>
+            </div>
+          </div>
+      </div>
+    <div style="float:right;">
+      <label class="form-label">Current Date and Time: 
+        <span id='date-time'>
+          <script>
+            var dt = new Date();
+            document.getElementById('date-time').innerHTML=dt;
+          </script>
+        </span>
+      </label>
+    </div>
+    <br>
+    <h1>Week At A Glance</h1>
+    <br>
+    <label class="form-label">* The following is your class schedule by day and time. Classes that do not have scheduled meeting times are listed at the bottom of the page. Click on hyperlinked courses for more details.</label>
+    <div class="box-shadow">
+      <hr>
+        <LABEL><SPAN class="form-label">Go to (MM/DD/YYYY):</SPAN></LABEL>
+            <input type="text" size="11" maxlength="10"/>&nbsp;
+            <button class="btn btn-primary"/>Submit</button>
+
+      <!-- Main Content goes between <hr> tags -->
+      <br>
+        <table class="weeklyTable" width="80%">
+          <tr>
+            <td colspan="1"><a href="">Previous Week</a></td>
+            <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td colspan="3"><SPAN>Week of Oct 18, 2021</SPAN><SPAN> (165 of 171)</SPAN></td>
+            <td colspan="1"></td>
+            <td colspan="1"><p><a href="">Next Week</a></p></td>
+          </tr>
+        </table>
+        <br>
+        <table class="weeklyTable" width="80%">
+          <tr>
+            <th class="tableHeader">&nbsp;</th>
+            <th class="tableHeader">Monday</th>
+            <th class="tableHeader">Tuesday</th>
+            <th class="tableHeader">Wednesday</th>
+            <th class="tableHeader">Thursday</th>
+            <th class="tableHeader">Friday</th>
+            <th class="tableHeader">Saturday</th>
+            <th class="tableHeader">Sunday</th>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">8am</th>
+            <td rowspan="5" class="courseLink"><a href="">CITA 460-01<br/>13492 Class<br/>8:00 am-9:15 am<br/>CHLHL 145</a></td>
+              <td class="default">&nbsp;</td>
+              <td rowspan="5" class="courseLink"><a href="">CITA 460-01<br/>13492 Class<br/>8:00 am-9:15 am<br/>CHLHL 145</a></td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">9am</th>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">10am</th>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">11am</th>
+              <td class="default">&nbsp;</td>
+              <td rowspan="7" class="courseLink"><a href="">CITA 330-01<br/>13076 Class<br/>11:00 am-12:50 pm<br/>CHLHL 144</a></td>
+              <td class="default">&nbsp;</td>
+              <td rowspan="7" class="courseLink"><a href="">CITA 330-02L<br/>13077 Class<br/>11:00 am-12:50 pm<br/>CHLHL 144</a></td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">12pm</th>
+            <td rowspan="7" class="courseLink"><a href="">CITA 405-01<br/>13324 Class<br/>12:00 pm-1:50 pm<br/>CHLHL 145</a></td>
+            <td rowspan="7" class="courseLink"><a href="">CITA 405-01<br/>13324 Class<br/>12:00 pm-1:50 pm<br/>CHLHL 145</a></td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">1pm</th>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">2pm</th>
+              <td rowspan="7" class="courseLink"><a href="">CITA 450-01<br/>13482 Class<br/>2:00 pm-3:50 pm<br/>CHLHL 144</a></td>
+              <td rowspan="7" class="courseLink"><a href="">CITA 385-01<br/>14363 Class<br/>2:00 pm-3:50 pm<br/>CHLHL 145</a></td>
+              <td rowspan="7" class="courseLink"><a href="">CITA 450-01<br/>13482 Class<br/>2:00 pm-3:50 pm<br/>CHLHL 144</a></td>
+              <td rowspan="7" class="courseLink"><a href="">CITA 385-01<br/>14363 Class<br/>2:00 pm-3:50 pm<br/>CHLHL 145</a></td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <th rowspan="4" class="tableHeader">3pm</th>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+              <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+            <td class="default">&nbsp;</td>
+          </tr>
+        </table>
+      <hr>
+      </div>
+        <p class="fw-bold fs-6">RELEASE: 1</p>
+        <p class="fw-bold fs-6">&copy; Jim Cook</p>
+    </div>
+</body>

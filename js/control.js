@@ -9,7 +9,7 @@ function login() {
     // Check if the inputted PIN is correct and the ID is correct
     if(PIN == 1234 && ID == "M1234567") {
         // Go to main menu page
-        window.location.href = "../pages/mainMenu.html";
+        window.location.href = "/pages/mainMenu.html";
     } else {
         // Alert user of failed login
         window.alert("You don fucked up A-A Ron");
@@ -132,16 +132,16 @@ function onLoad() {
         // Gets the current theme from cookies and appends the proper css file to the head
         switch(getTheme()) {
             case "light":
-                $('head').append('<link href="../css/md5/mdb.min.css" rel="stylesheet">');
+                $('head').append('<link href="/css/md5/mdb.min.css" rel="stylesheet">');
                 break;
             case "citrus":
-                $('head').append('<link href="../css/themes/citrus.css" rel="stylesheet">');
+                $('head').append('<link href="/css/themes/citrus.css" rel="stylesheet">');
                 break;
             case "chrimsonChin":
-                $('head').append('<link href="../css/themes/chrimsonChin.css" rel="stylesheet">');
+                $('head').append('<link href="/css/themes/chrimsonChin.css" rel="stylesheet">');
                 break;
             case "slate":
-                $('head').append('<link href="../css/themes/slate.css" rel="stylesheet">');
+                $('head').append('<link href="/css/themes/slate.css" rel="stylesheet">');
                 break;
             default:
                 // Do nothing (dark theme is default)
@@ -151,4 +151,27 @@ function onLoad() {
           // uh oh
           console.log("uh oh");
       }
+}
+function selectTerm(term) {
+    if (term == "Winter 2021") {
+        console.log("Winter :(");
+    } else if(term == "Fall 2021") {
+        window.location.href = "/pages/studentDetailSchedule.html";
+    } else if(term == "Summer 2021") {
+        console.log("Summer :D");
+    } else {
+        console.log("Spring :|");
+    }
+}
+/*
+ * Function to reset PIN Fields
+ * Could be change to reset any input fields if wanted to reuse somewhere else
+ */
+function reset() {
+    // Get all fields with the ID 'PIN'
+    var PIN = $("[id=PIN]");
+    for (var i = 0; i < PIN.length; i++) {
+        // Loop through and set all values to empty strings
+        PIN[i].value = "";
+    }
 }
