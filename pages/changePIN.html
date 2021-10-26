@@ -52,10 +52,29 @@
 <body onload="onLoad();">
     <div id="header"></div>
         <hr>
-        <h2 class="mb-1">Help</h2>
+        <h2 class="mb-1">Change PIN</h2>
         <div class="box-shadow">
             <hr>
-            
+            <p><span class="material-icons">info</span> You must enter your old PIN and your new PIN. Re-enter your new PIN for verification.</p>
+            <!-- Kinda bad rn but it works -->
+            <p style="padding-left:28px;">Your PIN must be 6 characters long and the format must comply with your site's rules. When finished, click Change PIN.</p>
+            <br>
+            <div class="row">
+                <div class="col-sm-2 align-self-start">
+                  <h6>Enter Old PIN:</h6>
+                  <h6>Enter New PIN:</h6>
+                  <h6>Re-enter New PIN:</h6>
+                </div>
+                <div class="col-sm-2 align-self-center">
+                    <input type="text" id="PIN" class="form-control form-control-sm"/>
+                    <input type="text" id="PIN" class="form-control form-control-sm"/>
+                    <input type="text" id="PIN" class="form-control form-control-sm"/>
+                </div>
+            </div>
+            <div class="row-sm-1" style="margin-top: 10px;">
+                <button class="btn btn-primary">Change PIN</button>
+                <button class="btn btn-primary" onclick="reset();">Reset</button>
+            </div>
             <hr>
         </div>
         <p class="fw-bold fs-6">RELEASE: Your Mom</p>
