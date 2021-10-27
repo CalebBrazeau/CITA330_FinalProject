@@ -18,31 +18,6 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script>
-      window.onload = function() {
-          try {
-              switch(getTheme()) {
-                  case "light":
-                      $('head').append('<link href="/css/md5/mdb.min.css" rel="stylesheet">');
-                      break;
-                  case "citrus":
-                      $('head').append('<link href="/css/themes/citrus.css" rel="stylesheet">');
-                      break;
-                  case "chrimsonChin":
-                      $('head').append('<link href="/css/themes/chrimsonChin.css" rel="stylesheet">');
-                      break;
-                  case "slate":
-                      $('head').append('<link href="/css/themes/slate.css" rel="stylesheet">');
-                      break;
-                  default:
-                      // Do nothing (dark theme is default)
-                      break;
-              }
-          } catch (e) {
-              console.log("uh oh");
-          }
-      }
-    </script>
     <script> 
       $(function(){
           $("#header").load("/pages/header.html"); 
@@ -57,7 +32,7 @@
             <hr>
             <div class="body-container">
                 <div>
-                  <a class="text-decoration-underline lonk" id="page-link" href="test">Select Term</a>
+                  <a class="text-decoration-underline lonk" id="page-link" href="/pages/studentInformation/schedulingTerm.html">Select Term</a>
                 </div>
                 <div>
                   <a class="text-decoration-underline lonk" id="page-link" href="test">Add or Drop Classes</a>

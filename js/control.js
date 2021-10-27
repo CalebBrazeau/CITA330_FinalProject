@@ -37,7 +37,7 @@ function generateSearchContainer() {
         $("#search-container").remove();
     } else {
         // Collect all links on the page with id 'page-link'
-        var links = $("#page-link");
+        var links = $("[id=page-link]");
     
         // create container div
         var container = document.createElement("div");
@@ -67,8 +67,9 @@ function generateSearchContainer() {
     
         // Append main search container to the 'second' nav bar
         $("#nav-bar-2").append(container);
+        // Keyboard event listener for enter key
+        Why();
     }
-
 }
 
 /*
@@ -147,16 +148,29 @@ function onLoad() {
                 // Do nothing (dark theme is default)
                 break;
         }
+        
+        var search = document.getElementById('search');
+        // Add keyup event listener
+        search.addEventListener("keyup", (event) => {
+            // If the event is equal to 'Enter'
+            if (event.key == 'Enter') {
+                // Goto the first results link
+                window.location.href = $('#result')[0].childNodes[0].href;
+            }
+        });
       } catch (e) {
           // uh oh
           console.log("uh oh");
       }
 }
+/*
+ * Function to go to the selected term
+ */
 function selectTerm(term) {
     if (term == "Winter 2021") {
         console.log("Winter :(");
     } else if(term == "Fall 2021") {
-        window.location.href = "/pages/studentDetailSchedule.html";
+        window.location.href = "/pages/studentInformation/studentDetailSchedule.html";
     } else if(term == "Summer 2021") {
         console.log("Summer :D");
     } else {
