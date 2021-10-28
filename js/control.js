@@ -184,6 +184,7 @@ function selectTerm(term) {
 function reset() {
     // Get all fields with the ID 'PIN'
     var PIN = $("[id=PIN]");
+    
     for (var i = 0; i < PIN.length; i++) {
         // Loop through and set all values to empty strings
         PIN[i].value = "";
