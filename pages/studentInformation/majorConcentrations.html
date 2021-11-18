@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="/js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("/pages/header.html"); 
+        });
+    </script>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+        <hr>
+        <h2 class="mb-1">Survey Term Selection</h2>
+        <div class="box-shadow">
+        <hr>
+        <div style="margin-left: 2%;">
+            <h2 class="mb-1">Major Concentrations</h2>
+            <p>This Survey is available to you for multiple school Terms. Please select the Term you wish to answer the Survey for.</p>
+            <p>
+                Survey Term 
+                <select name="term" id="term">
+                    <option value="spring">Spring 2022</option>
+                    <option value="fall">Fall 2022</option>
+                </select>
+            </p>
+            <button class="btn btn-primary" onclick="gotoPage('/pages/studentInformation/surveyExit.html');">Submit</button>
+        </div>
+        <hr>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>
