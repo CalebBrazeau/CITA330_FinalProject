@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="/js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+          $("#header").load("/pages/header.html"); 
+      });
+  </script>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+        <hr>
+        <h2 class="mb-1">Emergency Alert Notification</h2>
+        <div class="box-shadow">
+            <hr>
+                <div style="margin-left: 2%;">
+                    <h3>State University of New York Emergency Alert System</h3>
+                    <p>Our campus has implemented an Emergency Alert System based on the <b>SUNY NY-ALERT</b> service created and maintained by the New York State Emergency Management Office. This system will be used to provide information to our entire campus community in response to any event or situation on the campus which poses a serious safety concern. This system is one of a number of alert mechanisms which will be used during such an emergency but is the only alert system which sends alerts directly to you.</p>
+                    <p><b>This system will only be used to send information regarding serious safety issues.</b></p>
+                    <p>The <b>SUNY NY-ALERT</b> system is capable of sending e-mail messages, recorded voice messages and text messages to multiple addresses and phone numbers provided to the system. Participation is encouraged but is completely voluntary. It is provided to you at no cost (except for charges incurred receiving voice and text messages sent by the <b>SUNY NY-ALERT</b> system) and, only a single e-mail address is required to participate.</p>
+                    <br>
+                    <br>
+                    <h5>I have reviewed the description of the campus <b>SUNY NY-ALERT</b> service and have decided on the following course of action:</h5>
+                    <!-- Default checked radio -->
+                    <div class="form-check" style="margin-left: 2%;">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
+                        <label class="form-check-label" for="flexRadioDefault2">I would like to register for this service now and receive any alerts sent to the campus community.</label>
+                    </div>
+                    <!-- Default radio -->
+                    <div class="form-check" style="margin-left: 2%;">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                        <label class="form-check-label" for="flexRadioDefault1">I am not interested in participating in this service. I understand that safety alerts from this system would not be sent to me.</label>
+                    </div>
+                    <br>
+                    <div>
+                        <button class="btn btn-primary">Continue</button>
+                        <button class="btn btn-primary" onclick="gotoPage('/pages/personalInformation/emergencyAlertNotificationDisclaimer.html');">Disclaimer</button>
+                        <button class="btn btn-primary" onclick="gotoPage('/pages/personalInformation/emergencyAlertNotificationPrivacy.html');">Data Privacy Statement</button>
+                    </div>
+                </div>
+            <hr>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>

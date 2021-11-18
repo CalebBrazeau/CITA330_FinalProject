@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="/js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+          $("#header").load("/pages/header.html"); 
+      });
+  </script>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+        <hr>
+        <h2 class="mb-1">Emergency Alert Notification</h2>
+        <div class="box-shadow">
+            <hr>
+                <div style="margin-left: 2%;">
+                    <p class="text-decoration-underline"><b>SUNY Disclaimer</b></p>
+                    <p>While in the event of an emergency, the University will make every effort to reach all students and staff through the contact information they have submitted to the <b>SUNY NY-ALERT</b> system, the University acknowledges that technical limitations such as overtaxed communications systems, transmission errors, and cellular telephone roaming and out of range areas, as well as human delays in issuing emergency messages may limit the effectiveness of the system and delay or prevent the issuance or receipt of messages to all or certain users.</p>
+                    <p>SUNY will make every effort to inform all users of an emergency in a timely and appropriate manner, but cannot guarantee performance of the system and disclaims liability for messages delayed or not received due to technological limitations or human error.</p>
+                    <br>
+                    <h5>I have reviewed the description of the campus <b>SUNY NY-ALERT</b> service and have decided on the following course of action:</h5>
+                    <button class="btn btn-primary" onclick="gotoPage('/pages/personalInformation/emergencyAlertNotification.html');">RETURN</button>
+                </div>
+            <hr>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="/js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+          $("#header").load("/pages/header.html"); 
+      });
+  </script>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+        <hr>
+        <h2 class="mb-1">Emergency Alert Notification</h2>
+        <div class="box-shadow">
+            <hr>
+                <div style="margin-left: 2%;">
+                    <p class="text-decoration-underline"><b>Data Privacy Statement</b></p>
+                    <p>The Emergency Alert System is designed to alert you in cases where your personal safety may be at risk. For this reason it is critical that the <b>SUNY NY-ALERT</b> system have email, text messaging and phone numbers you use on a regular basis. Please be assured that the data you provide will be used for no other purpose. It will be used to maintain the Emergency Contact information for <b>SUNY NY-ALERT</b> but will not be placed within Banner and will not be used to contact you for any other reason.</p>
+                    <p>The data you provide will be sent to the State Emergency Management Office by SUNY System Administration. It will be sent to no other third parties, public or private. You will be able to alter your data at any time on the Morrisville Web for Students Personal Information menu including the option to remove yourself from the system. Data is transmitted weekly so registration and data changes can take up to seven days to alter the alert system.</p>
+                    <p>We consider this data critical and strongly encourage your participation. You will be able to enroll at any time using the Personal Information Menu in Morrisville Web for Students. You will be prompted at the beginning of each semester to confirm your decision regarding participation and offered an opportunity to update your personal contact data.</p>
+                    <p>By submitting contact information you are providing your consent for disclosure of this information to both SUNY System Administration and to the State Emergency Management Office.</p>
+                    <button class="btn btn-primary" onclick="gotoPage('/pages/personalInformation/emergencyAlertNotification.html');">RETURN</button>
+                </div>
+            <hr>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>

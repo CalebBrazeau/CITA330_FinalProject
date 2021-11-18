@@ -190,3 +190,133 @@ function reset() {
         PIN[i].value = "";
     }
 }
+function gotoPage(pageLocation) {
+    window.location.href = pageLocation;
+}
+function getSubnets(subnetsNeeded, host) {
+    var arr = new Array();
+    var storeMe = 0;
+    var bitsBorrowed = 0;
+    var bitsRemaining = 24;
+    for (let i = 0; storeMe < subnetsNeeded; i++) {
+        storeMe = Math.pow(2, i);
+        bitsBorrowed = i;
+    }
+    bitsRemaining -= bitsBorrowed;
+    arr.push(bitsBorrowed, storeMe, bitsRemaining, (Math.pow(2, bitsRemaining) - 2))
+    return arr;
+}
+function something() {
+    var ip = $('#IP')[0].value;
+    var subnet = getSubnets($('#Subnet')[0].value, $('#Host')[0].value);
+    var arr = subnet;
+    console.log(subnet);
+    var host = $('#Host')[0].value;
+    if (arr[0] > 0 & arr[0] <= 8) {
+        var sub;
+        if (arr[0] == 1) {
+            sub = 128;
+        } else if (arr[0] == 2) {
+            sub = 192;
+        } else if (arr[0] == 3) {
+            sub = 224;
+        } else if (arr[0] == 4) {
+            sub = 240;
+        } else if (arr[0] == 5) {
+            sub = 248;
+        } else if (arr[0] == 6) {
+            sub = 252;
+        } else if (arr[0] == 7) {
+            sub = 254;
+        } else {
+            sub = 255;
+        }
+        arr.push("255." + sub + ".0.0");
+    } else if (arr[0] > 8 & arr[0] <= 16) {
+        var sub;
+        if (arr[0] == 9) {
+            sub = 128;
+        } else if (arr[0] == 10) {
+            sub = 192;
+        } else if (arr[0] == 11) {
+            sub = 224;
+        } else if (arr[0] == 12) {
+            sub = 240;
+        } else if (arr[0] == 13) {
+            sub = 248;
+        } else if (arr[0] == 14) {
+            sub = 252;
+        } else if (arr[0] == 15) {
+            sub = 254;
+        } else {
+            sub = 255;
+        }
+        arr.push("255.255." + sub + ".0");
+    } else if (arr[0] > 16 & arr[0] <= 24) {
+        var sub;
+        if (arr[0] == 17) {
+            sub = 128;
+        } else if (arr[0] == 18) {
+            sub = 192;
+        } else if (arr[0] == 19) {
+            sub = 224;
+        } else if (arr[0] == 20) {
+            sub = 240;
+        } else if (arr[0] == 21) {
+            sub = 248;
+        } else if (arr[0] == 22) {
+            sub = 252;
+        } else if (arr[0] == 23) {
+            sub = 254;
+        } else {
+            sub = 255;
+        }
+        arr.push("255.255.255." + sub);
+    }
+    console.log(arr);
+    // if (host) {
+    //     var split = ip.split(".");
+    //     var subnets = 0;
+    //     var bits = 0;
+    //     var arr = new Array();
+    //     if (split[0] > 0 & split[0] < 127) {
+    //         console.log("Class A");
+    //         for (let i = 0; subnets < host; i++) {
+    //             subnets = (Math.pow(2, i));
+    //             bits = i;
+    //         }
+    //         arr.push(bits, subnets, 24 - bits);
+    //         
+    //         console.log(arr);
+    //         console.log("Bits taken: " + arr[0]);
+    //         console.log("Possible Subnets: " + arr[1]);
+    //         console.log("Bits remaining: " + arr[2]);
+    //         console.log("Possible hosts: " + (Math.pow(2, arr[2])));
+    //         console.log("New subnet: " + arr[3]);
+
+    //     } else if (split[0] > 127 & split[0] < 192) {
+    //         console.log("Class B");
+    //         console.log("Subnet: 255.255.0.0")
+    //     } else if (split[0] > 191 & split[0] < 224) {
+    //         console.log("Class C");
+    //         console.log("Subnet: 255.255.255.0")
+    //     }
+        // var bit = 0;t
+        // for (let i = 0; i < 8; i++) {
+        //     console.log(ip + bit);
+        //     bit += 32;
+        // }
+        // bit = 0;
+        // for (let i = 0; i < 8; i++) {
+        //     console.log(ip + (bit + 1) + " - " + ip + (bit + 30));
+        //     bit += 32;
+        // }
+        // bit = 0;
+        // for (let i = 0; i < 8; i++) {
+        //     console.log(ip + (bit + 31));
+        //     bit += 32;
+        // }
+    //} else {
+    //    window.alert("Enter Something pls");
+    //}
+}
