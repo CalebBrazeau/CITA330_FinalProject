@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="/js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script> 
+      $(function(){
+          $("#header").load("/pages/header.html"); 
+      });
+  </script>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+        <hr>
+        <h2 class="mb-1">Student Account</h2>
+        <div class="box-shadow">
+            <hr>
+            <div class="body-container">
+                <div>
+                  <a class="lonk text-decoration-underline" id="page-link" href="#">Student Account, Billing, and Payments</a>
+                  <p class="small text-muted">View overall status, holds, academic progress, cost of attendance, financial aid awards, and messages.</p>
+                </div>
+                <div>
+                  <a class="lonk text-decoration-underline" id="page-link" href="/pages/studentInformation/studentChecklist.html">Student Checklist</a>
+                  <p class="small text-muted">Review Financial Aid Holds (which may prevent payment of awards) and document requirements.</p>
+                </div>
+                <div>
+                  <a class="lonk text-decoration-underline" id="page-link" href="#">Confirm Your Enrollment</a>
+                  <p class="small text-muted">View account summary; Review awards; Accept award offers; Display award payment schedule; View loan applications; Review withdrawal information.</p>
+                </div>
+                <div>
+                  <a class="lonk text-decoration-underline" id="page-link" href="#">Select Tax Year</a>
+                </div>
+                <div>
+                  <a class="lonk text-decoration-underline" id="page-link" href="#">Tax Notification</a>
+                </div>
+                <div>
+                  <a class="lonk text-decoration-underline" id="page-link" href="#">View Holds</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>
