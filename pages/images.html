@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="/js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+          $("#header").load("/pages/header.html"); 
+      });
+  </script>
+  <style>
+      .thumbnail-image {
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+      }
+      .thumbnail-image:hover {
+          box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
+  </style>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+        <hr>
+        <h2 class="mb-1">Images</h2>
+        <div class="box-shadow">
+            <hr>
+                <p>Literally just a page to include images on the site</p>
+                <p>Bongo Cat:</p>
+                <img src="/images/bongo-cat.gif" alt="bongo-cat.gif" style="max-width: 250px;">
+                <p>Thumbail:</p>
+                <a href="https://tenor.com/view/bongo-cat-gif-19081723" target="_blank">
+                    <img src="/images/bongo-catjpg.jpg" alt="bongo-cat-thumbnail" class="thumbnail-image">
+                </a>
+            <hr>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>
