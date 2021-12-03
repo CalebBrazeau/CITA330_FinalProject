@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Web for Students V2</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+    <!-- Goo-Goo -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JS -->
+    <script src="/js/control.js"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+      $(function(){
+          $("#header").load("/pages/header.html"); 
+      });
+  </script>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+        <hr>
+        <h2 class="mb-1">Immunization Information</h2>
+        <div class="box-shadow">
+            <hr>
+                <!-- Main contect goes between hr tags -->
+                <p>The following data is provided from the Campus Immunizations system and is based on information you have submitted to our Health Center. New York State required immunizations must be obtained prior to attending classes at this institution.</p>
+                <br>
+                <h5><b>Please report any corrections which need to be made to the Health Center.</b></h5>
+                <p><b>Measles, Mumps and Rubella</b></p>
+                <table class="table">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">Description</th>
+                            <th scope="col">First Shot Date</th>
+                            <th scope="col">Second Shot Date</th>
+                            <th scope="col">Illness Date</th>
+                            <th scope="col">Titer Date</th>
+                            <th scope="col">Titer Results</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="table-active">MMR (Combined)</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">MMVR (Combined)</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">Measles</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">Mumps</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">Rubella</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p><b>Other immunizations</b></p>
+                <table class="table">
+                    <thead>
+                        <tr class="table-active">
+                            <th scope="col">Description</th>
+                            <th scope="col">First Shot Date</th>
+                            <th scope="col">Second Shot Date</th>
+                            <th scope="col">Third Shot Date</th>
+                            <th scope="col">Illness Date</th>
+                            <th scope="col">Titer Date</th>
+                            <th scope="col">Titer Results</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="table-active">Hepatitis B</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">Hepatitis A</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">Polio OPV</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active">Varicella</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                            <th class="table-light" style="color: var(--mdb-dark);">-na-</th>
+                        </tr>
+                    </tbody>
+                </table>
+            <hr>
+            <div style="display: flex;">
+                <p style="margin-right: 1rem;">Page 1 of 2</p>
+                <button type="button" class="btn btn-primary btn-sm" style="max-height: 30px;" onclick="gotoPage('/pages/studentInformation/immunizationInformation2.html');">Next Page</button>
+                <button type="button" class="btn btn-primary btn-sm" style="max-height: 30px;" onclick="gotoPage('/pages/mainMenu.html');">Return to Menu</button>
+            </div>
+        </div>
+        <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+        <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+    </div>
+</body>
