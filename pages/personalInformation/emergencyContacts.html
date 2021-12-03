@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Emergency Contacts</title>
+    <meta charset="utf-8">
+
+    <link href="/css/webForStudents.css" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script scr="/js/bootstrap/bootstrap.js"></script>
+    <!-- MD5 -->
+    <link href="/css/md5/mdb.dark.min.css" rel="stylesheet">
+    <script src="/js/md5/mdb.min.js"></script>
+   <!-- Goo-Goo -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- JS -->
+   <script src="/js/control.js"></script>
+   <!-- Jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+td {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+   overflow:hidden;padding:10px 5px;word-break:normal; text-align: center;}
+
+th  {border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal; background-color:#3b3b3b; text-align: center;}
+</style>
+    <script> 
+      $(function(){
+          $("#header").load("/pages/header.html"); 
+      });
+    </script>
+</head>
+<body onload="onLoad();">
+    <div id="header"></div>
+    <hr>
+
+          <h2 class="mb-1">Emergency Contacts</h2>
+          <div class="box-shadow">
+            <hr>
+              <div class="body-container">
+<p>Update a contact by selecting that contact and making the necessary changes. <br>
+
+In addition to designating Emergency Contacts, you may also wish to provide us with Emergency Medical Information that you would like us to provide to emergency response personnel if necessary and provides us with an address and phone number where you can be reached in case of emergency.</p>
+<hr>
+<div style="padding-left: 10px; padding-bottom: 30px;">
+<h4><i> Emergency Contact Information </i></h4>
+<table>
+<thead>
+  <tr>
+    <th>Order</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone Number</th>
+    <th>Relationship</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>1</td>
+    <td>911</td>
+    <td>179 N. Broad Street
+Norwich, NY 13815</td>
+    <td>911</td>
+    <td>The Hospital</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Police</td>
+    <td>18 E Main St, Norwich, NY 13815</td>
+    <td>(607) 334-1212</td>
+    <td>The Cops</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>FBI</td>
+    <td>200 McCarty Avenue
+Albany, NY 12209</td>
+    <td>(518) 465-7551</td>
+    <td>The Feds</td>
+  </tr>
+</tbody>
+</table>
+</div>
+				  
+				  </div>
+              </div>
+            <hr>
+          </div>
+
+          <p class="fw-bold fs-6">RELEASE: Your Mom</p>
+          <p class="fw-bold fs-6">&copy; 2021 Ellucian Company L.P. and its affiliates.</p>
+          
+        </div>
+    </body>
+</html>
