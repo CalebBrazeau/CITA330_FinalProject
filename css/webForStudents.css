@@ -12,13 +12,6 @@ a {
 button > a {
     color: var(--bs-light) !important;
 }
-/* So unput fields do not end up looking like noodles */
-/* input {
-    max-width: 150px !important;
-} */
-
-
-/* So checklist does not stretch farther than what looks decent */
 .checklist {
     max-width: 1800px !important;
 }
